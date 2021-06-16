@@ -393,7 +393,7 @@ body {
         .composition__photo--p2 {
           top: 0rem;
           transform: scale(1.4);
-          z-index: 1000; } }
+          z-index: 15; } }
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }
@@ -410,7 +410,7 @@ body {
         .composition__photo:hover {
           outline: 1rem solid #55c57a;
           transform: scale(1.4) translateY(-0.5rem);
-          z-index: 99999999; } }
+          z-index: 30; } }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
@@ -559,7 +559,7 @@ body {
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.4s 0.2s; }
   .popup__left {
-    width: 33.33333333%;
+    width: max;
     display: table-cell; }
     @media (max-width: 75em) {
       .popup__left {
@@ -844,7 +844,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1500;
+  z-index: -1;
   opacity: 0;
   width: 0;
   transition: all 0.7s cubic-bezier(0.34, -0.1, 0, 1.41); }
@@ -885,6 +885,7 @@ body {
   transform: scale(100); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
+  z-index: 1500;
   opacity: 1;
   width: 100%; }
 
